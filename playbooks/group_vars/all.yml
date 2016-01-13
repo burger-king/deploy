@@ -1,0 +1,5 @@
+git_repo: git@github.com:burger-king/server.git
+venv_path: /var/env/bkpm
+app_path: /var/www/bkpm
+remote_user: ubuntu
+web_group: www-data

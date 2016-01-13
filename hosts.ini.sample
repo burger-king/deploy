@@ -1,0 +1,33 @@
+[development]
+10.0.0.1 ansible_ssh_private_key_file=key.pem
+
+[development:vars]
+db_user=bk_user
+db_pass=pass
+db_host=localhost
+db_port=5432
+db_name=bk_dev
+mail_host=smtp.sup.com
+mail_user=bk
+mail_pass=pass
+salt:salty
+repos_dir=/tmp/repos
+archives_dir=/tmp/archives
+setup_db=true
+
+[production]
+10.0.0.1 ansible_ssh_private_key_file=key.pem
+
+[production:vars]
+db_user=bk_user
+db_pass=pass
+db_host=localhost
+db_port=5432
+db_name=bk_prod
+mail_host=smtp.sup.com
+mail_user=bk
+mail_pass=pass
+salt:salty
+repos_dir=/etc/bkpm/repos
+archives_dir=/etc/bkpm/archives
+setup_db=true
